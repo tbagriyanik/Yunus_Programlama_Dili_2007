@@ -1,0 +1,45 @@
+fonksiyon AnaHesap
+   Etiket1.baslik = "+ = " & (MetinKutusu2.baslik +  MetinKutusu3.baslik) &" Toplam" 
+   Etiket2.baslik = "- = "&(MetinKutusu2.baslik-MetinKutusu3.baslik) &" Fark" 
+   Etiket3.baslik = "* = "&(MetinKutusu2.baslik *    MetinKutusu3.baslik) &" Çarpım" 
+   Etiket4.baslik = "/ = "&(MetinKutusu2.baslik/MetinKutusu3.baslik) &" Bölüm" 
+   Etiket5.baslik = "^ = "&(MetinKutusu2.baslik^MetinKutusu3.baslik) &" Üs" 
+   Etiket6.baslik = "\ = "&(MetinKutusu2.baslik\MetinKutusu3.baslik) &" Tam Bölüm" 
+   Etiket7.baslik = "% = "&(MetinKutusu2.baslik%MetinKutusu3.baslik) &" Kalan" 
+   Etiket8.baslik = "&& = "&MetinKutusu2.baslik & MetinKutusu3.baslik  &" Metin Birleştir" 
+bitti
+//---  
+Dugme5 Tiklaninca 
+anahesap
+bitti
+//---
+Dugme4 Tiklaninca 
+form.genislik += MetinKutusu4.baslik
+MetinKutusu1.baslik=form.genislik
+Dugme1.genislik=form.genislik-20
+a+= MetinKutusu4.baslik
+Form.baslik=a
+bitti
+//---
+Dugme3 Tiklaninca
+form.genislik -= MetinKutusu4.baslik
+MetinKutusu1.baslik=form.genislik
+Dugme1.genislik=form.genislik-20
+a-= MetinKutusu4.baslik
+Form.baslik=a
+bitti
+//---
+Form Yuklenince
+a=1
+Form.baslik=a
+MetinKutusu2.baslik=2
+MetinKutusu3.baslik=3
+ANAHesap
+MetinKutusu1.baslik=form.genislik
+Dugme1.genislik=form.genislik-20
+bitti
+//---
+Dugme2 Tiklaninca
+form.genislik=MetinKutusu1.baslik
+Dugme1.genislik=form.genislik-20
+bitti

@@ -1,0 +1,20 @@
+Form Yuklenince
+Etiket1.baslik=Table3.kayitSayisi
+bitti
+
+
+OnayKutusu1 Tiklaninca
+Eger OnayKutusu1.deger="Evet"
+ deyim="[Owner]='"& MetinKutusu1.baslik&"'"
+ Tablo1 ara deyim
+Degilse
+ Tablo1 ara ""
+Egerbitti                                        
+Etiket2.baslik=Table3.kayitSayisi
+yuzde=Etiket2.baslik * 100 / Etiket1.baslik
+etiket6.baslik= "% " & yuzde
+bitti
+
+Dugme2 Tiklaninca
+bitir
+bitti

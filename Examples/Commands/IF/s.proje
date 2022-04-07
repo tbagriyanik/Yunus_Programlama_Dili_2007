@@ -1,0 +1,32 @@
+Fonksiyon Karsilastir
+a=MetinKutusu1.baslik
+b=MetinKutusu2.baslik
+  eger a<b
+    metin="a [ "&a&" ], b [ "&b&" ]'den küçük"
+  degilse             
+     eger a=b
+        metin="a [ "&a&" ], b [ "&b&" ]'e eşit"
+     degilse
+        metin="a [ "&a&" ], b [ "&b&" ]'den büyük"
+     egerbitti
+  egerbitti
+mesaj metin         
+
+Eger OnayKutusu1.deger = "hayir"
+    c="Onay Kutusu seçili değil"
+    eeger a=b, c &= " ve değerler eşit" , c &= " ve değerler eşit değil"
+degilse
+    c="Onay Kutusu seçili"
+    eeger a=b, c &= " ve değerler eşit" , c &= " ve değerler eşit değil"
+Egerbitti
+mesaj c
+
+bitti
+
+Dugme1 Tiklaninca
+Karsilastir
+bitti
+
+Dugme2 Tiklaninca
+Karsilastir
+bitti

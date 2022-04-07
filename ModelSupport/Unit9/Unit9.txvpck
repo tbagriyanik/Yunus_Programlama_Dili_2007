@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet>
+  <view uin="wj39wk0mi_v">
+    <property name="$name" value="Unit9" />
+    <property name="$defaultDiagram" value="True" />
+    <property name="$metaclass" value="Package Diagram" />
+    <reference referencedUin="delphi:e_class:src:Yunus:Unit9.TForm9">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_field:src:Yunus:Unit9.TForm9.Kapat1" />
+      <reference referencedUin="delphi:e_method:src:Yunus:Unit9.TForm9.FormKeyDown" />
+      <reference referencedUin="delphi:e_field:src:Yunus:Unit9.TForm9.PopupMenu1" />
+      <reference referencedUin="delphi:e_field:src:Yunus:Unit9.TForm9.Varsaylan1" />
+      <reference referencedUin="delphi:e_method:src:Yunus:Unit9.TForm9.Button1Click" />
+      <reference referencedUin="delphi:e_method:src:Yunus:Unit9.TForm9.Edit1KeyPress" />
+      <reference referencedUin="delphi:e_method:src:Yunus:Unit9.TForm9.FormClose" />
+      <reference referencedUin="delphi:e_method:src:Yunus:Unit9.TForm9.ilkoku" />
+      <reference referencedUin="delphi:e_method:src:Yunus:Unit9.TForm9.oku" />
+      <reference referencedUin="delphi:e_method:src:Yunus:Unit9.TForm9.kaydet" />
+      <reference referencedUin="delphi:e_method:src:Yunus:Unit9.TForm9.Seenek22Click" />
+      <reference referencedUin="delphi:e_method:src:Yunus:Unit9.TForm9.Seenek11Click" />
+      <reference referencedUin="delphi:e_method:src:Yunus:Unit9.TForm9.Seenek21Click" />
+      <reference referencedUin="delphi:e_method:src:Yunus:Unit9.TForm9.Seenek1Click" />
+      <reference referencedUin="delphi:e_method:src:Yunus:Unit9.TForm9.ValueListEditor1MouseMove" />
+      <reference referencedUin="delphi:e_field:src:Yunus:Unit9.TForm9.ekrarYkle1" />
+      <reference referencedUin="delphi:e_method:src:Yunus:Unit9.TForm9.FormShow" />
+      <reference referencedUin="delphi:e_method:src:Yunus:Unit9.TForm9.Varsaylan1Click" />
+      <reference referencedUin="delphi:e_field:src:Yunus:Unit9.TForm9.Button1" />
+      <reference referencedUin="delphi:e_field:src:Yunus:Unit9.TForm9.Edit1" />
+      <reference referencedUin="delphi:e_field:src:Yunus:Unit9.TForm9.Label1" />
+      <reference referencedUin="delphi:e_field:src:Yunus:Unit9.TForm9.ToolBar1" />
+      <reference referencedUin="delphi:e_field:src:Yunus:Unit9.TForm9.Seenek22" />
+      <reference referencedUin="delphi:e_field:src:Yunus:Unit9.TForm9.Seenek11" />
+      <reference referencedUin="delphi:e_field:src:Yunus:Unit9.TForm9.Seenek21" />
+      <reference referencedUin="delphi:e_field:src:Yunus:Unit9.TForm9.Seenek1" />
+      <reference referencedUin="delphi:e_field:src:Yunus:Unit9.TForm9.Varsaylan2" />
+      <reference referencedUin="delphi:e_field:src:Yunus:Unit9.TForm9.ValueListEditor1" />
+    </reference>
+  </view>
+</nodeSet>

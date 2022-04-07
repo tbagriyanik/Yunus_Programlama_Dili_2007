@@ -1,0 +1,68 @@
+Form Yuklenince
+A=200256            //expres
+etiket2.renk=A      //değişken
+form.baslik="Form1" //başlık
+bitti
+
+Form kapanirken
+A=200256            //expres
+etiket2.renk=A      //değişken
+form.baslik="Form1" //başlık
+bitti
+
+Dugme1 Tiklaninca
+a=100100100
+etiket2.renk=A
+etiket2.baslik=a
+form.baslik=MetinKutusu1.baslik
+bitti
+
+etIket2 Tiklaninca
+a=verigir "Bir Sayı(Renk) giriniz:"
+etiket2.renk=A
+etiket2.ipucu=metinkutusu1.baslik
+bitti
+
+etiket1 Tiklaninca
+onaykutusu1.ipucu= "çek kutuları"
+onaykutusu1.baslik = MetinKutusu1.baslik
+onaykutusu2.deger = onaykutusu1.deger
+onaykutusu2.renk = onaykutusu1.renk
+onaykutusu2.baslik = onaykutusu1.baslik
+onaykutusu2.aktif = onaykutusu1.deger
+onaykutusu2.ipucu = onaykutusu1.ipucu
+bitti
+
+Dugme3 Tiklaninca //çalıştır komutu
+b=metinkutusu1.baslik
+calistir b
+bitti
+
+Dugme2 Tiklaninca
+onaykutusu2.aktif=not(onaykutusu2.aktif)
+bitti
+
+Dugme4 Tiklaninca
+onaykutusu2.deger=not(onaykutusu2.deger)
+bitti
+
+OnayKutusu1 Tiklaninca
+MetinKutusu1.aktif=OnayKutusu1.deger
+bitti
+
+Dugme5 Tiklaninca
+YaziKutusu1.deger[1]="ana"
+ListeKutusu1.baslik=""
+AcilirKutu1.baslik=""
+Donder i=0,5,1
+  ListeKutusu1.deger[i]=YaziKutusu1.deger[i]
+  AcilirKutu1.deger[i]=YaziKutusu1.deger[i]
+  komut YaziKutusu1.deger[i] //bi tür hack :)
+Donderbitti
+  Etiket3.baslik=AcilirKutu1.deger[1]
+  Etiket4.baslik=ListeKutusu1.deger[2]
+bitti
+
+AcilirKutu1 Tiklaninca
+Etiket4.baslik=AcilirKutu1.baslik
+bitti

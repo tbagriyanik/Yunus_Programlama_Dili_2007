@@ -1,0 +1,43 @@
+fonksiyon Guncelle
+MetinKutusu1.baslik=ExcelTablosu1.hucre[1,1,1]
+MetinKutusu2.baslik=ExcelTablosu1.hucre[1,2,1]
+MetinKutusu3.baslik=ExcelTablosu1.hucre[1,3,1]
+MetinKutusu4.baslik=ExcelTablosu1.hucre[1,1,2]
+MetinKutusu5.baslik=ExcelTablosu1.hucre[1,2,2]
+MetinKutusu6.baslik=ExcelTablosu1.hucre[1,3,2]
+ExcelTablosu1.hucre[1,1,3]=MetinKutusu7.baslik
+MetinKutusu8.baslik=ExcelTablosu1.hucre[1,1,3]
+bitti
+
+Dugme2 Tiklaninca
+ ExcelTablosu1.hucre[1,1,1]=MetinKutusu1.baslik
+ ExcelTablosu1.hucre[1,2,1]=MetinKutusu2.baslik
+ ExcelTablosu1.hucre[1,3,1]=MetinKutusu3.baslik
+ ExcelTablosu1.hucre[1,1,2]=MetinKutusu4.baslik
+ ExcelTablosu1.hucre[1,2,2]=MetinKutusu5.baslik
+ ExcelTablosu1.hucre[1,3,2]=MetinKutusu6.baslik
+ ExcelTablosu1 Kaydet
+bitti
+      
+Form Yuklenince
+// klasor= "C:\Documents and Settings\TB\Belgelerim\KITAP\Ornekler\Diger\Yunus\Examples\Excel\ole1.xls"
+ ExcelTablosu1.deger=klasor
+ etiket6.baslik=ExcelTablosu1.deger
+ Guncelle
+bitti
+
+OnayKutusu1 Tiklaninca
+ ExcelTablosu1.aktif=OnayKutusu1.deger
+ guncelle
+bitti 
+       
+Dugme3 tiklaninca
+hepsi=" "
+Donder j=1,2,1
+    Donder i=1,3,1
+      hepsi &= exceltablosu1.hucre[1,i,j]&" "
+    Donderbitti
+Donderbitti
+ mesaj hepsi
+bitti            
+

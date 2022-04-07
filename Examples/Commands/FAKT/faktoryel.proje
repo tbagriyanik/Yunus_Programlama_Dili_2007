@@ -1,0 +1,66 @@
+ ///////////////////////////////////// ÝKÝLÝK
+Dugme2 Tiklaninca
+     deger  = MetinKutusu2.baslik
+     ikilik = " "
+
+    iken deger>0
+       ara  =deger % 2
+       deger\= 2
+       ikilik= ara & ikilik
+    ikenBitti
+
+     Etiket2.baslik=delete(ikilik,len(ikilik),1)
+//sonra da tersi 2'lik->10'luk
+    Bin = Etiket2.baslik
+    Dec = 0
+    Total = 0
+    Leng = Len(Bin)
+    donder i=1,Leng,1
+        c = Mid(Bin,i,1)
+        Total += ((2^(Leng-i)) * c)
+    donderbitti
+    Etiket5.baslik=total
+//16'lýk çevrim 
+    dec = MetinKutusu2.baslik
+    Hex = ""
+    A = Asc("A")
+    iken Dec >= 16
+        x = Dec % 16
+        eger x > 9
+            x = Chr(A + (x - 10))
+        egerbitti    
+        Hex = x & Hex
+        Dec \= 16
+    ikenbitti
+    eger Dec > 9
+        Dec = Chr(A + (Dec - 10))
+    egerbitti    
+    Hex = Dec & Hex
+    hex=delete(hex,len(hex),1)
+    Etiket6.baslik=hex
+    bip
+bitti
+ ///////////////////////////////////// ÇARPIM TABLOSU
+Dugme3 Tiklaninca 
+    carpim= MetinKutusu3.baslik
+    metin = " "     
+    satir = chr(13) 
+
+Donder son=1,10,1
+    metin &= carpim & " x " & son & " = " & (carpim*son) 
+    metin &= satir
+Donderbitti    
+    metin=delete(metin,1,1)
+bip
+    mesaj metin
+bitti
+///////////////////////////////////// FAKT
+Dugme1 Tiklaninca
+    fakt = 1 
+    Donder sayac=MetinKutusu1.baslik,2,-1
+         fakt *= sayac
+    Donderbitti
+    Etiket1.baslik=fakt 
+    bip
+bitti          
+

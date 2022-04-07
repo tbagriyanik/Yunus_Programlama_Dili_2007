@@ -1,0 +1,21 @@
+[OPTIONS]
+Binary Index=No
+Compatibility=1.1 or later
+Compiled file=yardim.chm
+Contents file=toc.hhc
+Default Font=Tahoma,8,0
+Default topic=index.html
+Display compile progress=Yes
+Enhanced decompilation=Yes
+Index file=Index.hhk
+Language=0x41f Türkçe
+Title=Yunus
+
+
+[FILES]
+index.html
+programEng.html
+short_eng.html
+
+[INFOTYPES]
+

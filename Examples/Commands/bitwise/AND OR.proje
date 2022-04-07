@@ -1,0 +1,15 @@
+function update
+  Label1.Caption=and(edit1.Caption,edit2.Caption)
+  Label2.Caption=or(edit1.Caption,edit2.Caption)
+  Label8.Caption=xor(edit1.Caption,edit2.Caption)
+  Label10.Caption=shr(edit1.Caption,edit2.Caption)
+  Label12.Caption=shl(edit1.Caption,edit2.Caption)
+end
+
+Form OnLoad
+ update
+End
+
+Button1 OnClick
+ update
+End

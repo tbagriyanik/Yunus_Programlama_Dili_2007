@@ -1,0 +1,84 @@
+object Form17: TForm17
+  Left = 419
+  Top = 296
+  BorderStyle = bsDialog
+  Caption = 'Breakpoint Ekleme'
+  ClientHeight = 89
+  ClientWidth = 267
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  KeyPreview = True
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  OnKeyDown = FormKeyDown
+  OnKeyPress = FormKeyPress
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object LabeledEdit1: TLabeledEdit
+    Left = 8
+    Top = 24
+    Width = 75
+    Height = 21
+    EditLabel.Width = 62
+    EditLabel.Height = 13
+    EditLabel.Caption = 'LabeledEdit1'
+    Font.Charset = TURKISH_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+  end
+  object LabeledEdit2: TLabeledEdit
+    Left = 86
+    Top = 24
+    Width = 171
+    Height = 21
+    EditLabel.Width = 62
+    EditLabel.Height = 13
+    EditLabel.Caption = 'LabeledEdit2'
+    Font.Charset = TURKISH_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 1
+  end
+  object Button1: TButton
+    Left = 119
+    Top = 56
+    Width = 60
+    Height = 25
+    Caption = 'Tamam'
+    Font.Charset = TURKISH_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 2
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 191
+    Top = 56
+    Width = 60
+    Height = 25
+    Caption = '&'#304'ptal'
+    Font.Charset = TURKISH_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 3
+    OnClick = Button2Click
+  end
+end

@@ -1,0 +1,14 @@
+Function Load
+          BenchmarkStart
+          for i=1,1000,1  '1 to 1000 step 1
+	   a=a+1
+          next
+          Benchmarkend
+          '2.3 seconds for my pc
+          '2.1 at highest priorty
+End
+
+
+Button1 OnClick
+  load
+End

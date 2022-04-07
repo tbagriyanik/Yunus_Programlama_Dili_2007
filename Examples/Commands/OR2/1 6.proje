@@ -1,0 +1,22 @@
+dugme1 Tiklaninca
+  Etiket1.baslik = MetinKutusu1.baslik +  MetinKutusu2.baslik 
+  Etiket1.baslik = "Toplam=" &Etiket1.baslik  
+bip    
+bitti    
+
+Dugme2 Tiklaninca
+  ad=verigir "Adýnýz"
+  uz=len(ad)
+
+  Eger uz<=10
+      Eger uz<5
+         mesaj "5'den az"
+      Degilse
+         mesaj "5-10 arasý"  
+      Egerbitti
+  Degilse
+     mesaj "10'dan büyük"  
+  Egerbitti
+
+bitti
+

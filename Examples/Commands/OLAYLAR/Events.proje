@@ -1,0 +1,27 @@
+MetinKutusu1 Tiklaninca
+form.baslik=len(MetinKutusu1.baslik)
+bitti
+
+YaziKutusu1 Tiklaninca
+Donder i=0, 100, 1
+uz=len(YaziKutusu1.deger[i])
+ eger uz=0
+  bitti
+ egerbitti
+ AcilirKutu1.deger[i]=YaziKutusu1.deger[i]
+ ListeKutusu1.deger[i]=YaziKutusu1.deger[i]
+Donderbitti
+bitti
+
+ListeKutusu1 Tiklaninca
+  mesaj "Değer: "&ListeKutusu1.baslik&" - seçim sırası: "&ListeKutusu1.secili
+bitti
+
+AcilirKutu1 Tiklaninca
+  mesaj "Değer: "&AcilirKutu1.baslik&" - seçim sırası: "&AcilirKutu1.secili
+bitti
+
+Dugme1 Tiklaninca
+ AcilirKutu1.secili=-1
+ ListeKutusu1.secili=-1
+bitti

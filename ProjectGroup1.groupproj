@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{F31E03FC-76B1-467E-85BF-09FD891C1D4B}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Yunus.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="D:\Kur2\depo\programlama\delphi\SynEdit-master\SynEdit-master\Packages\104S\SynEdit_D.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Yunus">
+        <MSBuild Projects="Yunus.dproj"/>
+    </Target>
+    <Target Name="Yunus:Clean">
+        <MSBuild Projects="Yunus.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Yunus:Make">
+        <MSBuild Projects="Yunus.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="SynEdit_D">
+        <MSBuild Projects="D:\Kur2\depo\programlama\delphi\SynEdit-master\SynEdit-master\Packages\104S\SynEdit_D.dproj"/>
+    </Target>
+    <Target Name="SynEdit_D:Clean">
+        <MSBuild Projects="D:\Kur2\depo\programlama\delphi\SynEdit-master\SynEdit-master\Packages\104S\SynEdit_D.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SynEdit_D:Make">
+        <MSBuild Projects="D:\Kur2\depo\programlama\delphi\SynEdit-master\SynEdit-master\Packages\104S\SynEdit_D.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Yunus;SynEdit_D"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Yunus:Clean;SynEdit_D:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Yunus:Make;SynEdit_D:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

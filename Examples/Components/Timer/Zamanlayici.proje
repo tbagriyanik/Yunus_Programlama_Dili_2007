@@ -1,0 +1,27 @@
+function TimeUpdate
+Label1.Caption=time() 
+timer1.Value=Edit1.Caption
+    canvas rectangle, 44,  158, 110, 175, 0 , 8421376
+    canvas text, 50,  160, Label1.Caption , 0
+    canvas text, 48,  158, Label1.Caption , 16776960
+beep
+end
+
+Timer1 onclick
+TimeUpdate
+end
+
+Check1 onclick
+  Timer1.Active=not(Check1.Value)
+end
+        
+Form OnLoad          
+Timer1.Value=1000
+Timer2.Value=Timer1.Value
+Edit1.Caption=Timer1.Value
+TimeUpdate
+End      
+
+Button3 OnClick
+ close
+End

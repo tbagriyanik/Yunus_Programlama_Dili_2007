@@ -1,0 +1,24 @@
+Dugme1 Tiklaninca 
+   a= (form.ust+( 7 % 5)+4-(6/(2^1)))/2*form.genislik
+// a= 2* Etiket1.ust ^2 + 5 + (7 % 5) 
+// a= (-1-(8^(1/3)))-(-8-1)
+   Etiket1.baslik= a  
+bitti         
+
+Dugme5 Tiklaninca //tek satýr komut yazabiliriz
+kom=verigir "Tek Satýr Komut Giriniz:"
+komut kom
+  komut MetinKutusu1.baslik
+  komut bip
+  komut mesaj "Saat çalýþýyor mu: "&Zamanlayici3.aktif
+bitti
+
+Zamanlayici3 Tiklaninca 
+  satir=chr(13) & chr(10)
+  Dugme4.baslik="Time: " & Time() &satir &"Date: " & Date()
+  Dugme4.genislik=160
+bitti
+        
+Dugme4 Tiklaninca
+   Zamanlayici3.aktif=not(Zamanlayici3.aktif)
+bitti            

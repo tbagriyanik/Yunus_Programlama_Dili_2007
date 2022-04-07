@@ -1,0 +1,137 @@
+Timer2 OnClick            //bu proje ile ilk oyunumuzu yapýyoruz...
+   ilkhiz=Edit3.Caption
+   aci=Edit4.Caption
+   timer2.Value=Edit1.Caption 
+   i+=0,35
+   x=int(ilkhiz*cos(aci)*i)
+   y=int(ilkhiz*sin(aci)*i-(5*i*i)) 
+   Label1.Left=x
+   Label1.Top=250-y        
+
+sinir1=Button4.Left+Button4.Width
+sinir2=Button4.top+Button4.Height
+sinir3=Memo1.Left+Memo1.Width
+sinir4=Memo1.top+Memo1.Height
+ucu1=Label1.Left+Label1.Width
+ucu2=Label1.top+Label1.Height                                 
+furdu=""
+
+If ucu1>=Button4.Left
+If ucu2>=Button4.top
+If Label1.left<=sinir1
+If Label1.top<=sinir2
+   i=0  
+   Label1.Top=250
+   Label1.left=20
+   Button4.Value=klasor&"ROOKW.BMP"
+   skor++ 
+   Label6.Caption="Skor = "&skor
+   Button4.Top=random(280)
+   Button4.left=random(500)
+   Timer2.Active="false"
+   furdu="true"
+   goto iptal
+Endif 
+Endif 
+Endif 
+Endif 
+
+If ucu1>=sinir3
+   i=0  
+   Label1.Top=250
+   Label1.left=20
+   furdu="false"
+   kacan++
+   Label2.Caption="Kaçan = "&kacan
+   Timer2.Active="false"
+   goto iptal
+Endif 
+If ucu2>=sinir4
+   i=0  
+   Label1.Top=250
+   Label1.left=20
+   furdu="false"
+   kacan++
+   Label2.Caption="Kaçan = "&kacan
+   Timer2.Active="false"
+   goto iptal
+Endif 
+If label1.top<=Memo1.Top
+   i=0  
+   Label1.Top=250
+   Label1.left=20
+   furdu="false"
+   kacan++
+   Label2.Caption="Kaçan = "&kacan
+   Timer2.Active="false"
+   goto iptal
+Endif 
+If label1.left<=Memo1.left
+   i=0  
+   Label1.Top=250
+   Label1.left=20
+   furdu="false"
+   kacan++
+   Label2.Caption="Kaçan = "&kacan
+   Timer2.Active="false"
+   goto iptal
+Endif      
+iptal:
+ If Check1.Value="True"
+  goto SON_Sesli
+ else
+  goto SON_Sessiz
+ Endif
+SON_Sesli:
+ If furdu="True"
+   playsound klasor&"yes.wav"
+ endif
+ If furdu="false"
+   playsound klasor&"no.wav"
+ endif
+SON_Sessiz:
+End       
+
+function Sifirla
+   i=0 
+   ilkhiz=Edit3.Caption
+   aci=Edit4.Caption
+   Timer2.Active="false" 
+   Label1.Top=250
+   Label1.left=20
+   klasor= "d:\downloads\Yunus\Examples\Projects\Yatay\"
+   Button4.Value=klasor&"ROOKB.BMP"
+end
+
+Form OnLoad
+ sifirla  
+ skor=0 
+ kacan = 0
+ Label6.Caption="Skor = 0"
+ Label2.Caption="Kaçan = 0"
+ Button4.Top=267
+ Button4.Left=491
+ iIf Check1.Value="True", playsound klasor&"enter.wav", ""
+End
+
+Button1 OnClick
+ sifirla
+ iIf Check1.Value="True", playsound klasor&"shoot.wav", ""
+ Timer2.Active="true" 
+End
+
+Button3 OnClick
+  edit3.Caption += 1
+End
+
+Button6 OnClick
+  edit3.Caption -= 1
+End
+
+Button8 OnClick
+  edit4.Caption += 1
+End
+
+Button7 OnClick
+  edit4.Caption -= 1
+End

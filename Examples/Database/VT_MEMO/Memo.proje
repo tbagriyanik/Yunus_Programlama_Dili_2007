@@ -1,0 +1,82 @@
+Form Yuklenince   
+  OnayKutusu1.deger="evet"
+  Tablo1 ilkKayit
+  Guncelle
+  Etiket11.baslik=Tablo1.deger 
+bitti
+
+fonksiyon GUNCELLE
+ MetinKutusu1.baslik=Tablo1.alan1 
+ MetinKutusu2.baslik=Tablo1.alan2
+ MetinKutusu3.baslik=Tablo1.alan3
+ MetinKutusu4.baslik=Tablo1.alan5 
+ YaziKutusu1.baslik=Tablo1.alan7 
+ Etiket5.baslik="Record Count:" & tablo1.kayitNo & "/"& Tablo1.kayitSayisi
+ Etiket11.baslik=Tablo1.deger
+bitti
+
+Dugme8 Tiklaninca
+  Tablo1 kayit
+  Tablo1.alan1=MetinKutusu1.baslik
+  Tablo1.alan2=MetinKutusu2.baslik
+  Tablo1.alan3=MetinKutusu3.baslik
+  Tablo1.alan5=MetinKutusu4.baslik
+  Tablo1.alan7=YaziKutusu1.baslik
+  Tablo1 kaydet
+  Guncelle
+bitti
+
+OnayKutusu1 tiklaninca
+ Tablo1.aktif=OnayKutusu1.deger
+ guncelle
+bitti
+
+Dugme2 Tiklaninca
+  Tablo1 ilkKayit
+  Guncelle
+bitti
+
+Dugme3 Tiklaninca
+  Tablo1 onceki
+  Guncelle
+bitti
+
+Dugme4 Tiklaninca
+  Tablo1 sonraki
+  Guncelle
+bitti
+
+Dugme5 Tiklaninca
+  Tablo1 sonKayit
+  Guncelle
+bitti
+
+Dugme6 Tiklaninca
+ MetinKutusu1.baslik="" 
+ MetinKutusu2.baslik=""
+ MetinKutusu3.baslik=""
+ MetinKutusu4.baslik=""
+
+  Tablo1 ekle
+  Guncelle
+bitti
+
+Dugme7 Tiklaninca
+kaygit=0
+kaygit=verigir "Silinmesi için birþey yazýp OK deyiniz"
+Eger kaygit<>0
+  Tablo1 sil
+  Guncelle
+Egerbitti
+bitti
+
+Dugme10 Tiklaninca                                      
+kaygit=0
+kaygit=verigir "Kaç kayýt ilerlenecek? (2 veya -2 gibi)"
+Eger kaygit<>0
+  Tablo1 kaydaGit kaygit
+  Guncelle
+Egerbitti
+bitti
+
+

@@ -1,0 +1,41 @@
+Form OnLoad
+ C=0
+ Sayac=0    
+ zaman=30
+ Timer4.Value=zaman
+ Edit1.Caption=zaman
+ pi=3,14159    //ana! pi burada ne arýyo :)
+ klasor="d:\downloads\Yunus\Examples\Projects\ani\"
+End       
+
+Button1 OnClick
+ close
+End
+
+Check1 OnClick
+Timer4.Active=Check1.Value
+Timer2.Active=Check1.Value
+End    
+
+Timer4 OnClick 
+j=(j%115)+1
+x=int(sin(pi*j)*60)+100
+y=int(cos(pi*j)*60)+60
+c=(c%16777215)+10
+//canvas rectangle, x, y, x+j, y+j, c, c+2000
+//canvas point, h+j, h, c
+    if Check2.Value="True"
+        canvas circle, x, y,x+j,y+j, 16777215-c, 16777215-c
+    else
+        canvas circle, x, y,x+j,y+j, c, c
+    endif
+End     
+
+Timer2 OnClick
+sayac=(sAyac%16)+1
+a= "w" & saYac & ".BMP"
+Button1.Value= klasor & A
+Button1.Caption= a  & chr(13) & Time() & chr(13) & Date()
+timer2.Value=Edit1.Caption
+timer4.Value=Edit1.Caption
+End

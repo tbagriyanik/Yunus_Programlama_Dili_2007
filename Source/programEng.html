@@ -1,0 +1,225 @@
+
+<html>
+<head>
+</head><body bgcolor=#ffffff background=BACKGRND.JPG lang=TR class="Normal">
+<meta http-equiv=Content-Type content="text/html; charset=Windows-1254">
+<title>Coding</title>
+<style>
+solid; BORDER-LEFT: #1F9FFF 0px solid; BORDER-RIGHT: #1F9FFF 0px
+solid; BORDER-TOP: #1F9FFF 0px
+solid; COLOR: #1F9FFF; FONT-FAMILY: Trebuschet MS; FONT-SIZE: 9pt; FONT-WEIGHT: bold}body
+{	scrollbar-face-color:lightyellow;
+	scrollbar-shadow-color:lightgray;
+	scrollbar-highlight-color:lightgray;
+	scrollbar-3dlight-color:default;
+	scrollbar-darkshadow-color:default;
+	scrollbar-track-color:default;
+	scrollbar-arrow-color:blue;
+; font-size: xx-small; border-top-width: thin}
+</style>
+<style><!--
+.Normal
+	{font-size:12.0pt;
+	font-family:"Times New Roman";}
+-->
+</style>
+<a name="ing"></a> 
+<p><span style='font-size:10.0pt;font-family:Arial'> Our coding system is more 
+  like Visual Basic. Really, i chose my favorite Pascal and C++ commands. We have 
+  a simple <i>educational</i> script language.<br>
+  <font color="#009900">Examples</font> folder is waiting for you to be explored. <br>
+  <br>
+  <font color="#009900"> <b>A few Tooltips:<br>
+  </b></font></span><span style='font-size:10.0pt;font-family:Arial;color:#0000CC'># 
+  You don't have to define variables and variable kinds. All the variables are 
+  global. You can use space, number starting names, special characters, however 
+  i don't advice. It's assumed that user is aware of mistakes.<br>
+  # Number (integer and real), string and boolean (True, False) are converted 
+  automatically. 1E3 can be used as 1000. Comma &quot;,&quot; is used for decimal 
+  separator.<br>
+  # &quot;=&quot; is used for comparison and expression assignment. There is no 
+  &quot;;&quot; at line ends. I am thinking of using &quot;;&quot; for multiple 
+  line commands.<br>
+  # &quot;+&quot;, &quot;-&quot;, &quot;*&quot;, &quot;/&quot;, &quot;&amp;&quot; 
+  (string combination), &quot;^&quot; (exp - exponential), “\” (div - integer 
+  division), &quot;%&quot; (mod - modulation), &quot;@&quot; (logical and), &quot;~&quot; 
+  (logical or) exist. You can use brackets. <br>
+  # After variables and components properties, you can use &quot;++&quot; and 
+  &quot;--&quot; to increase or to decrease. <i>a++</i> is an example, however 
+  it is not possible <i>++a</i> for now. <i>a++</i> is a little faster then <i>a=a+1</i>.<br>
+  # Unary calculations can be used as <i>a+=2</i> (equivalent is <i>a=a+2</i>) 
+  for all operators (+, -, *, /, ^, %, &amp;, \, @, ~). Do not use space between 
+  operator and equal sign like <i>a+ =1</i>.<br>
+  # Calculation direction is from left to right. There is no priorty for * (multiply) 
+  or / (divide). But you can use parenthesis.<br>
+  <i>a=5+6*3-2</i> ==&gt; <i>a=21</i> //normally; * (multiply) is done first, 
+  then the rest is done.<br>
+  <i>a=5+6*3-2 </i>==&gt; <i>a=31</i> //in Yunus; 5+6, then 11*3, then 33-2... 
+  so <i>a=5+(6*3)</i>-2 is better.<br>
+  # <font color="#FF0000">sin</font>(real), <font color="#FF0000">cos</font>(real), 
+  <font color="#FF0000">random</font>(integer), <font color="#FF0000">int</font>(real), 
+  <font color="#FF0000">not</font>(logical), <font color="#FF0000">len</font>(string), 
+  <font color="#FF0000">lower</font>(string), <font color="#FF0000">upper</font>(string), 
+  <font color="#FF0000">chr</font>(integer), <font color="#FF0000">asc</font>(character), 
+  <font color="#FF0000">delete</font>(string, first, count), <font color="#FF0000">mid</font>(string, 
+  first, count), <font color="#FF0000">pos</font>(string, character), <font color="#FF0000">and</font>(integer, 
+  integer),<font color="#FF0000"> or</font>(integer, integer),<font color="#FF0000"> 
+  xor</font>(integer, integer),<font color="#FF0000"> shr</font>(integer, count),<font color="#FF0000"> 
+  shl</font>(integer, count), <font color="#FF0000">time</font>() and <font color="#FF0000">date</font>() 
+  functions are available. I did not add these to customize window.<br>
+  # Strings and boolean (&quot;True&quot;, &quot;False&quot;) are needed to be 
+  between &quot; (double quote).<br>
+  # Commands, component properties and variables are not case sensitive. <br>
+  # </span><span style='font-size:10.0pt;font-family:Arial;color:red'>If</span><span
+style='font-size:10.0pt;font-family:Arial;color:#0000CC'> is used as one or multiple 
+  comparison expression. You can use &quot;@&quot; as AND or &quot;~&quot; as 
+  OR.<br>
+  # </span><span style='font-size:10.0pt;font-family:Arial;color:red'>If</span><span
+style='font-size:10.0pt;font-family:Arial;color:#0000CC'>'s comparison may contain 
+  &quot;=&quot; &quot;&gt;&quot; &quot;&lt;&quot; &quot;&lt;&gt;&quot; &quot;&lt;=&quot; 
+  &quot;&gt;=&quot;. One within another <font color="#FF0000">If (Else)</font> 
+  blocks work fine.<br>
+  # </span><font color="#FF0000"> <span
+style='font-size:10.0pt;font-family:Arial;'>iif</span></font><span
+style='font-size:10.0pt;font-family:Arial;color:#0000CC'> condition, true line, 
+  false line is like in VB. You can't use blocks in true or false part.<br>
+  # </span><font color="#FF0000"> <span
+style='font-size:10.0pt;font-family:Arial;'>For</span></font><span
+style='font-size:10.0pt;font-family:Arial;color:#0000CC'> varName=StartVal, LastVal, 
+  Increment is available and can be used </span><span
+style='font-size:10.0pt;font-family:Arial;color:#0000CC'>one within another.<br>
+  # </span><font color="#FF0000"> <span
+style='font-size:10.0pt;font-family:Arial;'>While</span></font><span
+style='font-size:10.0pt;font-family:Arial;color:#0000CC'> is for rotation command 
+  blocks until false comparison. Its finishing word is </span> <font color="#FF0000"><span
+style='font-size:10.0pt;font-family:Arial;'>Do</span></font><span
+style='font-size:10.0pt;font-family:Arial;color:#0000CC'>.</span><span
+style='font-size:10.0pt;font-family:Arial;color:#0000CC'><br>
+  # You can write your own <font color="#FF0000">Function</font> without parameters.<br>
+  # &quot;//&quot; is for comment lines. We can do inline comments.<br>
+  </span><span
+style='font-size:10.0pt;font-family:Arial;color:#0000CC'> # </span><span style='font-size:10.0pt;
+font-family:Arial;color:red'>Goto</span><span style='font-size:10.0pt;
+font-family:Arial;color:#0000CC'> is for branching any labeled line.<br>
+  # You can Tab and put spaces between commands. </span><span
+style='font-size:10.0pt;font-family:Arial;color:#0000CC'>But <font color="#FF0000">Goto</font>'s 
+  labels and &quot;:&quot; must be adjacent like &quot;error:&quot;.<br>
+  #<font color="#FF0000"> Canvas </font>is used for <font color="#FF0000">text</font>, 
+  <font color="#FF0000">line</font>, <font color="#FF0000">point</font>, <font color="#FF0000">rectangle</font> 
+  (square), <font color="#FF0000">circle</font> (ellipse), <font color="#FF0000">PolyLine</font> 
+  on Form. <font color="#FF0000">Refresh</font> is to clean. These drawings are 
+  not persistent.<br>
+  # </span><font color="#FF0000"> <span
+style='font-size:10.0pt;font-family:Arial;'>playSound</span></font><span
+style='font-size:10.0pt;font-family:Arial;color:#0000CC'> filename is for *.wav 
+  music files.<br>
+  # <font color="#FF0000">Table</font> component is to use *.xml (Extensible Markup 
+  Language) and *.cds (Client Data Set) files to record simple things. SQL (Structured 
+  Query Language) support and table design window (shortcut: Ctrl+D) in not finished.<br>
+  # </span><font color="#FF0000"> <span
+style='font-size:10.0pt;font-family:Arial;'>ExcelTable</span></font><span
+style='font-size:10.0pt;font-family:Arial;color:#0000CC'> is for using Excel files. 
+  Any cells can be reached and modified, then that file can be saved. New file 
+  can not be created.<br>
+  # </span><font color="#FF0000"> <span
+style='font-size:10.0pt;font-family:Arial;'>BenchmarkStart</span></font><span
+style='font-size:10.0pt;font-family:Arial;color:#0000CC'> and </span><font color="#FF0000"> 
+  <span
+style='font-size:10.0pt;font-family:Arial;'>BenchmarkEnd</span></font><span
+style='font-size:10.0pt;font-family:Arial;color:#0000CC'> is for miliseconds speed 
+  calculation of that code block. Its result is added to Error Window.<br>
+  </span><span
+style='font-size:10.0pt;font-family:Arial;color:#0000CC'># </span><font color="#FF0000"> 
+  <span
+style='font-size:10.0pt;font-family:Arial;'>command</span></font><span
+style='font-size:10.0pt;font-family:Arial;color:#0000CC'> oneLineCommand is for 
+  Yunus' own one line command execution. For example; <br>
+  command a=1<br>
+  # <font color="#FF0000">inport</font>(address) and <font color="#FF0000">outport</font>(address, 
+  byteValue) is for hardware port usage. For example 888 (hexadecimal 378) is 
+  printer's data port address in decimal number system.<br>
+  # Here is a list of all assignable events.<br>
+  </span></p>
+<table width="56%" border="0" align="center" bordercolor="#006666" bordercolorlight="#CCCCFF">
+  <tr align="center" valign="middle" bordercolor="#009999" bgcolor="#FFFFFF"> 
+    <th width="24%" nowrap> 
+      <div align="center"><font face="Arial, Helvetica, sans-serif" size="2" color="#000000">Component</font></div>
+    </th>
+    <th width="24%" nowrap> 
+      <div align="center"><font face="Arial, Helvetica, sans-serif" size="2" color="#000000">Event 
+        name in Yunus</font></div>
+    </th>
+    <th width="52%" nowrap> 
+      <div align="center"><font face="Arial, Helvetica, sans-serif" size="2" color="#000000">Event 
+        equivalent in Delphi</font></div>
+    </th>
+  </tr>
+  <tr> 
+    <td width="24%" bgcolor="#FFFFCA"><font face="Arial, Helvetica, sans-serif" size="2" color="#0000CC">Form</font></td>
+    <td width="24%" bgcolor="#FFFFCA"><font face="Arial, Helvetica, sans-serif" size="2" color="#0000CC">OnLoad<br>
+      OnClose <br>
+      </font></td>
+    <td width="52%" bgcolor="#FFFFCA"><font face="Arial, Helvetica, sans-serif" size="2" color="#0000CC">OnShow<br>
+      OnClose </font></td>
+  </tr>
+  <tr> 
+    <td width="24%" bgcolor="#FFFFCA"><font face="Arial, Helvetica, sans-serif" size="2" color="#0000CC">Label 
+      (StaticText)</font></td>
+    <td width="24%" bgcolor="#FFFFCA"><font face="Arial, Helvetica, sans-serif" size="2" color="#0000CC">OnClick</font></td>
+    <td width="52%" bgcolor="#FFFFCA"><font face="Arial, Helvetica, sans-serif" size="2" color="#0000CC">OnClick</font></td>
+  </tr>
+  <tr> 
+    <td width="24%" bgcolor="#FFFFCA"><font face="Arial, Helvetica, sans-serif" size="2" color="#0000CC">Edit</font></td>
+    <td width="24%" bgcolor="#FFFFCA"><font face="Arial, Helvetica, sans-serif" size="2" color="#0000CC">OnClick</font></td>
+    <td width="52%" bgcolor="#FFFFCA"><font face="Arial, Helvetica, sans-serif" size="2" color="#0000CC">OnChange</font></td>
+  </tr>
+  <tr> 
+    <td width="24%" bgcolor="#FFFFCA"><font face="Arial, Helvetica, sans-serif" size="2" color="#0000CC">Button 
+      (BitBtn)</font></td>
+    <td width="24%" bgcolor="#FFFFCA"><font face="Arial, Helvetica, sans-serif" size="2" color="#0000CC">OnClick</font></td>
+    <td width="52%" bgcolor="#FFFFCA"><font face="Arial, Helvetica, sans-serif" size="2" color="#0000CC">OnClick</font></td>
+  </tr>
+  <tr> 
+    <td width="24%" bgcolor="#FFFFCA"><font face="Arial, Helvetica, sans-serif" size="2" color="#0000CC">CheckBox</font></td>
+    <td width="24%" bgcolor="#FFFFCA"><font face="Arial, Helvetica, sans-serif" size="2" color="#0000CC">OnClick</font></td>
+    <td width="52%" bgcolor="#FFFFCA"><font face="Arial, Helvetica, sans-serif" size="2" color="#0000CC">OnClick</font></td>
+  </tr>
+  <tr> 
+    <td width="24%" bgcolor="#FFFFCA"><font face="Arial, Helvetica, sans-serif" size="2" color="#0000CC">ComboBox</font></td>
+    <td width="24%" bgcolor="#FFFFCA"><font face="Arial, Helvetica, sans-serif" size="2" color="#0000CC">OnClick</font></td>
+    <td width="52%" bgcolor="#FFFFCA"><font face="Arial, Helvetica, sans-serif" size="2" color="#0000CC">OnChange</font></td>
+  </tr>
+  <tr> 
+    <td width="24%" bgcolor="#FFFFCA"><font face="Arial, Helvetica, sans-serif" size="2" color="#0000CC">Memo 
+      (RichEdit)</font></td>
+    <td width="24%" bgcolor="#FFFFCA"><font face="Arial, Helvetica, sans-serif" size="2" color="#0000CC">OnClick</font></td>
+    <td width="52%" bgcolor="#FFFFCA"><font face="Arial, Helvetica, sans-serif" size="2" color="#0000CC">OnChange</font></td>
+  </tr>
+  <tr> 
+    <td width="24%" bgcolor="#FFFFCA"><font face="Arial, Helvetica, sans-serif" size="2" color="#0000CC">ListBox</font></td>
+    <td width="24%" bgcolor="#FFFFCA"><font face="Arial, Helvetica, sans-serif" size="2" color="#0000CC">OnClick</font></td>
+    <td width="52%" bgcolor="#FFFFCA"><font face="Arial, Helvetica, sans-serif" size="2" color="#0000CC">OnClick</font></td>
+  </tr>
+  <tr> 
+    <td width="24%" bgcolor="#FFFFCA"><font face="Arial, Helvetica, sans-serif" size="2" color="#0000CC">Timer</font></td>
+    <td width="24%" bgcolor="#FFFFCA"><font face="Arial, Helvetica, sans-serif" size="2" color="#0000CC">OnClick</font></td>
+    <td width="52%" bgcolor="#FFFFCA"><font face="Arial, Helvetica, sans-serif" size="2" color="#0000CC">OnTimer</font></td>
+  </tr>
+</table>
+<p><span
+style='font-size:10.0pt;font-family:Arial;color:#0000CC'># Do not use command 
+  names for variable names like Goto, close, end.<br>
+  # Do not use &quot;yeni&quot; for project name.<br>
+  <br>
+  </span><span
+style='font-size:10.0pt;font-family:Arial;color:#0000CC'><font color="#009933"><b>Tasks 
+  to do:</b></font><br>
+  # Case command <br>
+  # Component creation<br>
+  # Better Hot Spot, multiple selection of components<br>
+  # Variable and component arrays<br>
+  # Full working Multiple Forms<br>
+  # Wider Help File<br>
+  # Full working EXE producing and HTML output </span></p>
+</body>
+</html>

@@ -1,0 +1,12 @@
+Button1 OnClick
+  x = 0
+  for i = 0,1000,1
+    x = x + 0,01 
+  next
+  z = 10,082 - 0,072
+  if x=z
+    message "Perfect Precision"
+  else
+    message "Not quite right"
+  endif
+End

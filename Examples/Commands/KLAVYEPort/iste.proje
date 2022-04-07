@@ -1,0 +1,26 @@
+Form OnLoad
+Check1.Value="false"
+End                
+
+Form OnClose
+     Outport(97,30)    
+End
+
+Check1 OnClick
+    If Check1.Value="True"
+       Outport(97,255) //FFh
+    Else
+       Outport(97,30)    
+    Endif
+End
+
+Button1 OnClick          
+  OutPort(67, 255)
+  OutPort(66, edit1.Text)
+  OutPort(66, 25)
+End
+
+Timer2 OnClick
+label2.Caption=Inport(96) //klavye portu
+outport(96,9)
+End

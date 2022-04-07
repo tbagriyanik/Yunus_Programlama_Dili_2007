@@ -1,0 +1,27 @@
+Button1 OnClick
+a += 5
+Label2.Caption= a & " is not equal"  
+
+   If    a < edit2.Caption    
+    sekil= "<<<"
+    label1.Caption= a & " is smaller"
+    else
+        If    a > edit2.Caption     
+        sekil= ">>>"
+        label1.Caption= a & " is bigger"
+        else
+        sekil= "==="
+        Label1.caption= a & " is equal"
+        Label2.Caption= a & " is equal"
+        Endif
+   Endif
+Label3.Caption=a&" "&sekil
+End
+
+Form OnLoad
+a=0             
+Label1.Caption=0
+Label2.Caption=0
+Label3.Caption=a & " <<<"
+Edit2.caption=20
+End

@@ -1,0 +1,77 @@
+Button1 OnClick
+For ss  =  3 ,   1 ,   -1   
+    message "Gerisayým : "&ss
+Next         
+For i  =  50 ,   100 ,   5
+        For k=3,5,1
+            For l=-7,7,3
+               hepsi=i&", "&k&", "&l
+               canvas rectangle,3,3,55,20,1000,5000
+               canvas text,3,3,hepsi,16777215
+            Next
+        Next
+  canvas circle,100,100,i-25,i-25,i+50000,i+50000
+Next         
+  message "Ýþlem Tamam..."
+End
+      
+Button2 OnClick
+// -----------------harf karýþtýr 1
+benchmarkstart
+    S = Edit1.Caption
+    Leng = Len(S)
+    i=1
+    while i<Leng
+        n = Random(Leng) + 1
+        c = Mid(S,n,1)
+        c2 = Mid(S,i,1)
+        S = Mid(S,1,i - 1) & c & Mid(S,i + 1,Leng)
+        S = Mid(S,1,n - 1) & c2 & Mid(S,n + 1,Leng)
+        i++
+    do
+benchmarkend
+    message S
+End
+
+Button3 OnClick
+// ---harf karýþtýr 2(while'dan %18 daha hýzlý)
+benchmarkstart
+    S = Edit1.Caption
+    Leng = Len(S)
+    for i=1,Leng,1
+        n = Random(Leng) + 1
+        c = Mid(S,n,1)
+        c2 = Mid(S,i,1)
+        S = Mid(S,1,i - 1) & c & Mid(S,i + 1,Leng)
+        S = Mid(S,1,n - 1) & c2 & Mid(S,n + 1,Leng)
+    next
+benchmarkend
+    message S
+End
+
+Button4 OnClick
+// -----------------Ýlk harf büyüt
+    S = Edit1.Caption
+    Leng = Len(S)
+    c = Upper(Mid(S,1,1))
+    S = c & Mid(S,2,Leng)
+    for i=2,Leng-1,1
+            c = Mid(S,i,1)
+            if c = " "
+                c = Upper(Mid(S,i+1,1))
+                S = Mid(S,1,i) & c & Mid(S,i+2,Leng)
+            endif
+    next
+    message S
+End
+
+Button5 OnClick
+    S = Edit1.Caption
+    Leng = Len(S)
+    p = Pos("a",S)
+    while p > 0
+        S = Mid(S,1,p - 1) & "A" & Mid(S,p + 1,Leng) 
+        p = Pos("a",S)
+    do
+    message S
+End

@@ -1,0 +1,67 @@
+<?xml version="1.0">
+  <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xdb="http://www.borland.com/schemas/delphi/6.0/XMLDataBinding">
+    <xs:element name="DATAPACKET" type="DATAPACKETType" />
+    <xs:complexType name="DATAPACKETType">
+      <xs:annotation>
+        <xs:appinfo xdb:docElement="DATAPACKET" />
+      </xs:annotation>
+      <xs:sequence>
+        <xs:element name="METADATA" type="METADATAType" />
+        <xs:element name="ROWDATA" type="ROWDATAType" />
+      </xs:sequence>
+      <xs:attribute name="Version" type="xs:string" />
+    </xs:complexType>
+    <xs:complexType name="METADATAType">
+      <xs:sequence>
+        <xs:element name="FIELDS" type="FIELDSType" />
+        <xs:element name="PARAMS" type="PARAMSType" />
+      </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="FIELDSType">
+      <xs:sequence>
+        <xs:element name="FIELD" type="FIELDType" maxOccurs="unbounded" />
+      </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="FIELDType">
+      <xs:sequence/ />
+      <xs:attribute name="attrname" type="xs:string" />
+      <xs:attribute name="fieldtype" type="xs:string" />
+      <xs:attribute name="WIDTH" type="xs:integer" />
+      <xs:attribute name="SUBTYPE" type="xs:string" />
+    </xs:complexType>
+    <xs:complexType name="PARAMSType">
+      <xs:sequence/ />
+      <xs:attribute name="DEFAULT_ORDER" type="xs:integer" />
+      <xs:attribute name="PRIMARY_KEY" type="xs:integer" />
+      <xs:attribute name="LCID" type="xs:integer" />
+    </xs:complexType>
+    <xs:complexType name="ROWDATAType">
+      <xs:sequence>
+        <xs:element name="ROW" type="ROWType" maxOccurs="unbounded" />
+      </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ROWType">
+      <xs:sequence/ />
+      <xs:attribute name="PartNo" type="xs:integer" />
+      <xs:attribute name="VendorNo" type="xs:integer" />
+      <xs:attribute name="Description" type="xs:string" />
+      <xs:attribute name="OnHand" type="xs:integer" />
+      <xs:attribute name="OnOrder" type="xs:integer" />
+      <xs:attribute name="Cost" type="xs:string" />
+      <xs:attribute name="ListPrice" type="xs:string" />
+    </xs:complexType>
+  </xs:schema>
+</?xml>
+<dataroot />
+<lists />
+<settings>
+  <NextNodeID>
+    "1"
+  </NextNodeID>
+  <DataBaseName>
+    "unnamed"
+  </DataBaseName>
+  <HighLight>
+    "-1"
+  </HighLight>
+</settings>

@@ -1,0 +1,115 @@
+Form Yuklenince
+sira=1
+bitti 
+
+Dugme1 Tiklaninca
+a=inport(metinkutusu1.baslik)     
+Etiket1.baslik=a  
+
+    dec = MetinKutusu1.baslik
+    Hex = ""
+    A = Asc("A")
+    iken Dec >= 16
+        x = Dec % 16
+        eger x > 9
+            x = Chr(A + (x - 10))
+        egerbitti    
+        Hex = x & Hex
+        Dec \= 16
+    ikenbitti
+    eger Dec > 9
+        Dec = Chr(A + (Dec - 10))
+    egerbitti    
+    Hex = Dec & Hex
+    hex=delete(hex,len(hex),1)
+    Etiket6.baslik=hex
+
+    dec = Etiket1.baslik
+    Hex = ""
+    A = Asc("A")
+    iken Dec >= 16
+        x = Dec % 16
+        eger x > 9
+            x = Chr(A + (x - 10))
+        egerbitti    
+        Hex = x & Hex
+        Dec \= 16
+    ikenbitti
+    eger Dec > 9
+        Dec = Chr(A + (Dec - 10))
+    egerbitti    
+    Hex = Dec & Hex
+    hex=delete(hex,len(hex),1)
+    Etiket6.baslik&=" / "&hex
+bitti
+
+Dugme2 Tiklaninca
+outport(metinkutusu2.baslik,metinkutusu3.baslik)
+    dec = MetinKutusu2.baslik
+    Hex = ""
+    A = Asc("A")
+    iken Dec >= 16
+        x = Dec % 16
+        eger x > 9
+            x = Chr(A + (x - 10))
+        egerbitti    
+        Hex = x & Hex
+        Dec \= 16
+    ikenbitti
+    eger Dec > 9
+        Dec = Chr(A + (Dec - 10))
+    egerbitti    
+    Hex = Dec & Hex
+    hex=delete(hex,len(hex),1)
+    Etiket7.baslik=hex
+
+    dec = MetinKutusu3.baslik
+    Hex = ""
+    A = Asc("A")
+    iken Dec >= 16
+        x = Dec % 16
+        eger x > 9
+            x = Chr(A + (x - 10))
+        egerbitti    
+        Hex = x & Hex
+        Dec \= 16
+    ikenbitti
+    eger Dec > 9
+        Dec = Chr(A + (Dec - 10))
+    egerbitti    
+    Hex = Dec & Hex
+    hex=delete(hex,len(hex),1)
+    Etiket7.baslik &= " / "&hex
+bitti
+
+OnayKutusu1 Tiklaninca
+Zamanlayici3.aktif=not(Zamanlayici3.aktif)
+bitti
+
+Zamanlayici3 Tiklaninca
+Zamanlayici3.deger=MetinKutusu4.baslik
+eger OnayKutusu2.deger="Evet"
+    sira=(sira%10)+1 
+    eEger sira=1,outport(888,1),""
+    eEger sira=2,outport(888,3),""
+    eEger sira=3,outport(888,7),""
+    eEger sira=4,outport(888,15),""
+    eEger sira=5,outport(888,31),""
+    eEger sira=6,outport(888,15),""
+    eEger sira=7,outport(888,7),""
+    eEger sira=8,outport(888,3),""
+    eEger sira=9,outport(888,1),""
+    eEger sira=10,outport(888,0),""
+degilse
+    sira=(sira%8)+1 
+    eEger sira=1,outport(888,1),""
+    eEger sira=2,outport(888,2),""
+    eEger sira=3,outport(888,4),""
+    eEger sira=4,outport(888,8),""
+    eEger sira=5,outport(888,16),""
+    eEger sira=6,outport(888,8),""
+    eEger sira=7,outport(888,4),""
+    eEger sira=8,outport(888,2),""
+egerbitti
+bitti
+

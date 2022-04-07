@@ -1,0 +1,14 @@
+Form Yuklenince
+   metinkutusu1.baslik = "Selam!"
+   etiket1.baslik = ""
+bitti
+
+
+Dugme1 Tiklaninca
+'   etiket1.baslik = metinkutusu1.baslik
+a =  metinkutusu1.baslik
+eger a = "ahmet"
+     etiket1.baslik = "ahmet yazdınız"
+egerbitti 'eğer komutu bitti
+   
+bitti

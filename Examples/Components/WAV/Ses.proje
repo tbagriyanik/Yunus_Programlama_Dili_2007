@@ -1,0 +1,33 @@
+Button1 OnClick
+//klasor= "C:\Belgelerim\KITAP\Ornekler\Diger\Yunus\Examples\Yatay\"
+//playsound klasor & "nO.wav"
+canvas circle, 10,10,100,100, Edit1.Caption,edit2.Caption
+canvas rectangle, 15,15,90,90, Edit1.Caption,edit2.Caption
+canvas polyline, 100,100, 80,50, 120,90, 160,10, 150,100, 190,110, 140,130, 100,190 , 100,100 ,edit2.Caption   
+canvas PolyLine,415,126,445,215,541,215,463,272,492,360,415,306,338,360,367,272,289,216,386,216,415,126,1211212
+canvas text,110,90,"aha!" , edit1.Caption
+End
+
+Button3 OnClick
+refresh
+End
+
+Timer2 OnClick
+A=random(form.Width) 
+B=random(form.Height)
+C=random(16777215) 
+d=random(form.width)
+e=random(form.Height)
+//     benchmarkStart
+    if Check1.Value="True"
+        canvas line,a,b,d,e,c  
+    else
+        canvas point, A, B, C
+        canvas point, A-1, B-1, C+100
+        canvas point, A+1, B-1, C+200
+        canvas point, A-1, B+1, C+300
+        canvas point, A+1, B+1, C + 400
+    endif
+//     benchmarkEnd
+End
+

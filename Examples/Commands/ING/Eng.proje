@@ -1,0 +1,20 @@
+Button2 OnClick 
+form.Caption=Edit1.Caption
+//a=edit1.Caption
+End      
+
+Button1 OnClick
+form.Caption="aaaa"
+hm 
+a+=b
+End      
+
+Form OnLoad
+form.Caption="Form"
+hm  
+b=2
+End 
+
+function hm
+beep
+end

@@ -1,0 +1,109 @@
+Zamanlayici9 Tiklaninca
+  A=random(form.genislik-250) +250
+  b=random(form.yukseklik-100) +100
+  c=random(16777215)
+  yuzey dikdortgen, 273,100,356,123,c-100,c
+  yuzey metin, 275, 105, "TeleFon DefTeri" , c+100
+  yuzEY nOKta,a , b,c
+  yuzey daire, a,b,a+4, b+4, c+c, c
+  yuzey daire, a,b,a+4, b+4, c+c, c
+  yuzey ciZgi, a,b,a+8,b+8, c
+  yuzey cIzgi, a,b,a+8,b+8, c
+  yuzey Cizgi, a,b,a-4,b, c
+  yuzeY cizgi, a,b,a,b-4, c 
+bitti             
+
+fonksiyon GUNCELLE
+ MetinKutusu1.baslik=Tablo1.alan1 
+ MetinKutusu2.baslik=Tablo1.alan2
+ OnayKutusu4.baslik=Tablo1.alan3
+ OnayKutusu4.deger=Tablo1.alan3
+ MetinKutusu4.baslik=Tablo1.alan4 
+ Etiket10.baslik= (Tablo1.alan4 *1,17)& " KDVli [%17]"
+ Etiket5.baslik="Kayýt Sayýsý:" & tablo1.kayitno & "/"& Tablo1.kayitsayisi
+ Etiket11.baslik=Tablo1.deger
+bitti
+
+Form Yuklenince   
+  OnayKutusu1.deger="evet"
+  OnayKutusu2.deger="Hayir"
+  Tablo1 ilkKayit
+  Guncelle
+  Etiket11.baslik=Tablo1.deger 
+bitti
+
+OnayKutusu1 tiklaninca
+ Tablo1.aktif=OnayKutusu1.deger
+ guncelle
+bitti
+
+OnayKutusu2 tiklaninca
+Eger OnayKutusu2.deger="Evet"
+  deyim="["&AcilirKutu1.baslik&"]"&acilirkutu2.baslik&"'"& MetinKutusu5.baslik&"'"
+  Tablo1 ara deyim
+  Tablo1 ilk
+Degilse
+  Tablo1 ara ""
+Egerbitti
+Guncelle
+bitti
+
+OnayKutusu3 tiklaninca
+ Zamanlayici9.aktif=OnayKutusu3.deger
+ eEger Zamanlayici9.aktif="hayir", tazele, ""
+bitti
+
+Dugme2 Tiklaninca
+  Tablo1 ilkkayit
+  Guncelle
+bitti
+
+Dugme3 Tiklaninca
+  Tablo1 onceki
+  Guncelle
+bitti
+
+Dugme4 Tiklaninca
+  Tablo1 sonraki
+  Guncelle
+bitti
+
+Dugme5 Tiklaninca
+  Tablo1 sonkayit
+  Guncelle
+bitti
+
+Dugme6 Tiklaninca
+ MetinKutusu1.baslik="" 
+ MetinKutusu2.baslik=""
+ MetinKutusu4.baslik=""
+ OnayKutusu4.baslik=""
+ OnayKutusu4.deger="Hayir"
+
+  Tablo1 ekle
+  Guncelle
+bitti
+
+Dugme7 Tiklaninca
+//soru sormadan...
+  Tablo1 sil
+  Guncelle
+bitti
+
+Dugme8 Tiklaninca
+  Tablo1 kayit
+  Tablo1.alan1=MetinKutusu1.baslik
+  Tablo1.alan2=MetinKutusu2.baslik
+  Tablo1.alan3=OnayKutusu4.deger
+  Tablo1.alan4=MetinKutusu4.baslik
+  Tablo1 kaydet
+  Guncelle
+bitti
+
+Dugme10 Tiklaninca     
+kaygit=verigir "Kaç kayýt ilerlenecek? (2 veya -2 gibi)"
+  Tablo1 kaydagit kaygit
+  Guncelle
+bitti
+
+

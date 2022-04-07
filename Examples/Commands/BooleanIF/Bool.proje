@@ -1,0 +1,39 @@
+  //****General Usage****//
+  //0 is False, 1 is True
+  //****General Usage****//
+
+Button1 OnClick
+a= 1<>1 @ 3>2    //0 And 1 = 0 
+b= 0 @ 5         //0 And 1 = 0 
+c= 1=1 ~ 0       //1 Or 0 = 1
+d= 0 ~ 1>2 ~ 0   //0 Or 0 Or 0 = 0
+ Label1.Caption=a & " " & b & " "& c & " "& d
+
+ a=2
+ b=4+ a=1 +1    //4 + 0 + 1 = 5
+ if a=1 ~ b=5   //0 Or 1 = 1 
+  Message "a or b condition is True"
+ endif  
+ label2.Caption= a<=2 * b  //1*5=5
+End
+
+Form OnLoad
+ Label1.Caption="-"
+ Label2.Caption="-"
+End
+Form OnClose
+ Label1.Caption="-"
+ Label2.Caption="-"
+End
+
+Button2 OnClick   
+oldcap=form.Caption
+c=20     
+ans="-"
+ while  c>10 @ ans<>"x"
+  ans= Input "Will i contiune? (x=Exits)"
+  c--
+  form.Caption=c
+ do
+form.Caption=oldcap
+End

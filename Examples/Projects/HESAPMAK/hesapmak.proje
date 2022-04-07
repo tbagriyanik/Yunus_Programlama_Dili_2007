@@ -1,0 +1,117 @@
+Form Yuklenince  
+Etiket1.baslik=0
+a=0
+b=0
+islem = "a"
+eski_ust=form.ust
+eski_sol=Form.sol
+form.ust=200
+form.sol=400
+bitti       
+
+Form kapanirken  
+form.ust=eski_ust
+form.sol=eski_sol
+bitti       
+
+Dugme17 Tiklaninca
+a=0
+b=0
+islem="a"
+Etiket1.baslik="0"
+bitti        
+
+Dugme18 Tiklaninca                                    
+Etiket1.baslik *= -1
+bitti    
+Dugme19 Tiklaninca    
+uzunluk=len(Etiket1.baslik)
+eEger uzunluk<>1,Etiket1.baslik=delete(Etiket1.baslik,uzunluk,1),Etiket1.baslik=0
+bitti  
+Dugme20 Tiklaninca                                    
+Etiket1.baslik=0
+bitti            
+Dugme21 Tiklaninca                                    
+Etiket1.baslik=1/Etiket1.baslik
+bitti        
+Dugme22 Tiklaninca                                    
+Etiket1.baslik=cos(Etiket1.baslik)
+bitti  
+Dugme23 Tiklaninca                                    
+Etiket1.baslik=sin(Etiket1.baslik)
+bitti       
+
+Dugme15 Tiklaninca  
+eeger Etiket1.baslik=0,Etiket1.baslik="",
+Etiket1.baslik&="1"
+bitti
+Dugme14 Tiklaninca
+eeger Etiket1.baslik=0,Etiket1.baslik="",
+Etiket1.baslik&="2"
+bitti
+Dugme13 Tiklaninca
+eeger Etiket1.baslik=0,Etiket1.baslik="",
+Etiket1.baslik&="3"
+bitti
+Dugme12 Tiklaninca
+eeger Etiket1.baslik=0,Etiket1.baslik="",
+Etiket1.baslik&="4"
+bitti
+Dugme11 Tiklaninca
+eeger Etiket1.baslik=0,Etiket1.baslik="",
+Etiket1.baslik&="5"
+bitti
+Dugme10 Tiklaninca
+eeger Etiket1.baslik=0,Etiket1.baslik="",
+Etiket1.baslik&="6"
+bitti
+Dugme9 Tiklaninca
+eeger Etiket1.baslik=0,Etiket1.baslik="",
+Etiket1.baslik&="7"
+bitti
+Dugme8 Tiklaninca
+eeger Etiket1.baslik=0,Etiket1.baslik="",
+Etiket1.baslik&="8"
+bitti
+Dugme7 Tiklaninca
+eeger Etiket1.baslik=0,Etiket1.baslik="",
+Etiket1.baslik&="9"
+bitti
+Dugme6 Tiklaninca
+eeger Etiket1.baslik=0,Etiket1.baslik="",
+Etiket1.baslik&="0"
+bitti
+
+Dugme5 Tiklaninca 
+ara=int(Etiket1.baslik)
+eEger ara=Etiket1.baslik,Etiket1.baslik&=",", ""
+bitti
+
+Dugme4 Tiklaninca
+a=Etiket1.baslik
+islem="a"
+Etiket1.baslik="0"
+bitti
+Dugme3 Tiklaninca
+a=Etiket1.baslik
+islem="c"
+Etiket1.baslik="0"
+bitti
+Dugme2 Tiklaninca
+a=Etiket1.baslik
+islem="m"
+Etiket1.baslik="0"
+bitti
+Dugme1 Tiklaninca
+a=Etiket1.baslik
+islem="b"
+Etiket1.baslik="0"
+bitti
+
+Dugme16 Tiklaninca
+b=Etiket1.baslik
+eeger islem="a",Etiket1.baslik=a+b,  ""
+eeger islem="c",Etiket1.baslik=a-b,  ""
+eeger islem="m",Etiket1.baslik=a*b,  ""
+eeger islem="b",Etiket1.baslik=a/b,  ""
+bitti

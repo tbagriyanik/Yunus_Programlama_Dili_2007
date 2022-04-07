@@ -1,0 +1,25 @@
+        /// Password = 1 ///
+fonksiyon SifreKontrol
+hata:
+sifre="KILL"
+sifre=verigir "Enter Password"
+
+ eeger sifre = "KILL", git hata, ""
+
+ eger sifre <> "1"
+  mesaj "Access Denied!"
+  git hata
+ egerbitti
+
+  sayac++
+  mesaj "Access Granted..."
+devam:
+bitti
+
+Dugme1 Tiklaninca
+sifrekontrol
+bitti      
+
+Form Yuklenince
+sifrekontrol
+bitti
